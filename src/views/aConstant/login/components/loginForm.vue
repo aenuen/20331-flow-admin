@@ -16,19 +16,7 @@
           <span class="svg-container">
             <svg-icon icon-class="password" />
           </span>
-          <el-input
-            :key="passwordType"
-            ref="password"
-            v-model="loginForm.password"
-            :type="passwordType"
-            placeholder="密码"
-            name="password"
-            tabindex="2"
-            autocomplete="off"
-            @keyup.native="checkCapsLock"
-            @blur="capsTooltip = false"
-            @keyup.enter.native="login"
-          />
+          <el-input :key="passwordType" ref="password" v-model="loginForm.password" :type="passwordType" name="password" tabindex="2" autocomplete="off" @keyup.native="checkCapsLock" @blur="capsTooltip = false" @keyup.enter.native="login" />
           <span class="show-pwd" @click="showPwd">
             <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
           </span>

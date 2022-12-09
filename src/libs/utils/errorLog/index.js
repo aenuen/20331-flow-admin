@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import { typeString, typeArray } from 'methods-often/import'
 import store from '@/store'
-import settings from '@/settings'
-
-const { errorLog: needErrorLog } = settings
+import { errorLog as needErrorLog } from '@/settings'
 const checkNeed = () => {
   const env = process.env.NODE_ENV
   if (typeString(needErrorLog)) {

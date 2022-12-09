@@ -18,8 +18,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">已入账案件数</div>
-          <count-to :start-val="0" :end-val="enterNumber" :duration="3000" class="card-panel-num" />
-          件
+          <count-to :start-val="0" :end-val="enterNumber" :duration="3000" class="card-panel-num"> 件</count-to>
         </div>
       </div>
     </el-col>
@@ -81,8 +80,8 @@ export default {
     overflow: hidden;
     color: #666;
     background: #fff;
-    box-shadow: 4px 4px 40px rgba(0, 0, 0, .05);
-    border-color: rgba(0, 0, 0, .05);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.05);
 
     &:hover {
       .card-panel-icon-wrapper {
@@ -102,7 +101,7 @@ export default {
       }
 
       .icon-shopping {
-        background: #34bfa3
+        background: #34bfa3;
       }
     }
 
@@ -119,7 +118,7 @@ export default {
     }
 
     .icon-shopping {
-      color: #34bfa3
+      color: #34bfa3;
     }
 
     .card-panel-icon-wrapper {

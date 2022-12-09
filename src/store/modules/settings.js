@@ -1,9 +1,7 @@
 // noinspection JSUnresolvedVariable
 
 import variables from '@/assets/styles/element-variables.scss'
-import defaultSettings from '../../settings'
-
-const { showSettings, tagsView, fixedHeader, sidebarLogo } = defaultSettings
+import { showSettings, tagsView, fixedHeader, sidebarLogo } from '@/settings'
 
 const state = {
   theme: variables.theme,

@@ -1,5 +1,5 @@
-import defaultSettings from '@/settings'
+import { projectName } from '@/settings'
 
-const title = defaultSettings.title || 'Video Admin'
+const title = projectName || 'Video Admin'
 
 export default pageTitle => pageTitle ? `${pageTitle} - ${title}` : `${title}`

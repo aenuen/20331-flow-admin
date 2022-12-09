@@ -4,7 +4,8 @@ import axios from 'axios'
 import { MessageBox, Message } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/libs/utils/token'
-import { apiBaseUrl, successCode, tokenCode } from './settings'
+import { apiBaseUrl, resultConfig } from '@/settings'
+const { successCode, tokenCode } = resultConfig
 
 const service = axios.create({ // 创建一个axios实例
   baseURL: apiBaseUrl,

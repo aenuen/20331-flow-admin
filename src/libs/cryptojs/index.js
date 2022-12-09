@@ -1,16 +1,10 @@
 // noinspection JSUnresolvedVariable,JSCheckFunctionSignatures
 
 const CryptoJs = require('crypto-js')
-const secret = require('./settings')
+import { cryptojsConfig } from '@/settings'
+const { secret } = cryptojsConfig
 
-const CryptoJsEncode = string => CryptoJs.AES.encrypt(string, secret).toString()
+export const CryptoJsEncode = string => CryptoJs.AES.encrypt(string, secret).toString()
 
-const CryptoJsDecode = string => {
-  const bytes = CryptoJs.AES.decrypt(string, secret)
-  return bytes.toString(CryptoJs.enc.Utf8)
-}
+export const CryptoJsDecode = string => CryptoJs.AES.decrypt(string, secret).toString(CryptoJs.enc.Utf8)
 
-module.exports = {
-  CryptoJsEncode,
-  CryptoJsDecode
-}

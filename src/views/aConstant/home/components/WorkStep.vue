@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div style="height:100px;line-height:100px;text-align: center">
-      案件审批流程
-    </div>
+    <div style="height: 100px; line-height: 100px; text-align: center">案件审批流程</div>
     <el-steps :active="stepIndex">
       <el-step title="基本资料" icon="el-icon-edit" />
       <el-step title="上传附件" icon="el-icon-upload" />
@@ -18,31 +16,12 @@
 <script>
 export default {
   name: 'ViewsHomeComponentsStep',
-  components: { // 引用组件
-  },
-  filters: { // 过滤器
-  },
-  directives: { // 自定义指令
-  },
-  props: { // 定义传值
-  },
-  data() { // 定义数据
+  data() {
     return {
       stepIndex: 8
     }
-  },
-  computed: { // 监控自定义的变量
-  },
-  watch: { // 监控值变换
-  },
-  mounted() { // 渲染后运行
-  },
-  created() { // 渲染时运行
-  },
-  methods: { // 方法函数
   }
 }
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
